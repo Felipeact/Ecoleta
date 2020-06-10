@@ -1,0 +1,37 @@
+{% extends "layout.html" %}
+
+{% set pageId = "page-search-results" %}
+
+{% block title %}
+    <title>Delete ponto Coleta</title>
+{% endblock title %}
+
+{% block styles %}
+     <link rel="stylesheet" href="/styles/modal.css">
+{% endblock styles %}
+
+{% block content %}
+
+    {% include "parcials/page-header.html" %}
+
+    <div id="modal" class="point">
+    <div class="content">
+        <h1>Desculpe, Esta pagina esta em manutencao</h1>
+    </div>
+</div>
+
+<script>
+    //Redicionamento da pagina
+    setTimeout(() => {
+        window.location = "/"
+    }, 2000)
+
+</script>
+
+{% endblock content %}
+<!-- Incluindo Partes Repitida-->
+
+
+
+</body>
+</html>
